@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  storetest:
+    image: ${DOCKER_REGISTRY-}storetest
+    build:
+      context: .
+      dockerfile: StoreTest\Dockerfile
